@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Rotherdam' ;
+    src: url(fontes/Rotherdam\ Signature.ttf);
+}
+
+@font-face {
+    font-family: 'Playfair';
+    src: url(fontes/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(fontes/Raleway-Regular.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    color: black;
+}
+
+:root {
+    --cor01: #FAFAFA;
+    --cor02: #D4D5CE;
+    --cor03: #83837D;
+    --cor04: #E7E0DB;
+    --cor05: #92634F;
+
+    --fonte-cursiva: 'Rotherdam', cursive;
+    --fonte-serifada: 'Playfair', cursive;
+    --fonte-reta: 'Raleway', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--cor01);
+    height: 60px;
+}
+nav  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 390px;  
+    margin-right: 25px;   
+}
+nav > a {
+    text-decoration: none;
+    padding: 10px;
+    font-family: var(--fonte-reta); 
+    font-size: 0.9em; 
+}
+
+section#traco {
+    position: relative;  
+}
+section#traco > div {
+    position: absolute;
+    left: 806px;
+    width: 1050px;
+    height: 2px;
+    background-color: black;
+}
+
+section#sobre {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--cor01);
+    height: 710px;
+}
+section#sobre h1{
+    display: flex;
+    font-family: var(--fonte-cursiva);
+    font-weight: normal;
+    font-size: 8em;
+}
+section#sobre h2 {
+    display: flex;
+    font-family: var(--fonte-serifada);
+}
+
+
+
+
+
+
+/* <img loading="lazy" class="pp-photo-img wp-image-25213 size-full" src="https://www.cursoemvideo.com/wp-content/uploads/2019/08/guana6.png" alt="guana6" itemprop="image" height="664" width="700" srcset="https://www.cursoemvideo.com/wp-content/uploads/2019/08/guana6.png 700w, https://www.cursoemvideo.com/wp-content/uploads/2019/08/guana6-300x285.png 300w, https://www.cursoemvideo.com/wp-content/uploads/2019/08/guana6-316x300.png 316w, https://www.cursoemvideo.com/wp-content/uploads/2019/08/guana6-600x569.png 600w" sizes="(max-width: 700px) 100vw, 700px" title="guana6"> */

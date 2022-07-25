@@ -33,11 +33,11 @@
     --fonte-reta: 'Raleway', sans-serif;
 }
 
-html {
+/* html {
     overflow-x: hidden;
     overflow-y: auto;
     height: 100%;
-}
+} */
 
 header {
     display: flex;
@@ -60,35 +60,68 @@ nav > a {
     font-size: 0.9em; 
 }
 
-section#traco {
-    position: relative;  
+main {
+    display: flex;
+    justify-content: flex-start;
+    background-color: yellow; 
+    height: 6000px;
+    width: 100%;
+}
+
+/* section#traco {
+    display: flex;  
 }
 section#traco > div {
-    position: absolute;
-    left: 806px;
-    width: 1050px;
+    display: flex;
+    width: 600px;
     height: 2px;
     background-color: black;
-}
+} */
 
-section#sobre {
+section#sobre{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: var(--cor01);
-    height: 710px;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #92634F;
+    width: 100%;
+    height: 700px;
 }
-section#sobre h1{
+article#sobre {
     display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+    height: 171px;
+    width: 420px;
+    background-color: red; 
+} 
+article#sobre > h1 {
     font-family: var(--fonte-cursiva);
     font-weight: normal;
-    font-size: 8em;
-}
-section#sobre h2 {
+    font-size: 10em;
+} 
+article#portifolio {
     display: flex;
-    font-family: var(--fonte-serifada);
+    justify-content: flex-end;
+    padding-top: 0px;
+    width: 420px;
+    background-color: blue;
 }
-
+article#portifolio > h2 {
+    font-family: var(--fonte-serifada);
+    font-size: 3.2em;
+    font-weight: normal;
+}
+article#livia {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 5px;
+    width: 420px;
+    background-color: pink;
+}
+article#livia > h3 {
+    
+}
 
 
 

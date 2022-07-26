@@ -91,8 +91,9 @@ article#sobre {
     display: flex;
     justify-content: flex-start;
     padding-top: 10px;
-    height: 171px;
     width: 420px;
+    height: 171px;
+    background-color: purple;
 } 
 article#sobre > h1 {
     font-family: var(--fonte-cursiva);
@@ -104,6 +105,7 @@ article#portifolio {
     justify-content: flex-end;
     padding-top: 0px;
     width: 420px;
+    background-color: orangered;
 }
 article#portifolio > h2 {
     font-family: var(--fonte-serifada);
@@ -115,6 +117,7 @@ article#livia {
     justify-content: flex-end;
     padding-top: 5px;
     width: 420px;
+    background-color: purple;
 }
 article#livia > h3 {
     font-family: var(--fonte-reta);
@@ -126,11 +129,11 @@ article#texto {
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 10px;
-    padding-left: 10px;
-    height: 100px;
-    max-width: 560px;
-    min-width: 400px;
+    padding-left: 30px;
     padding-right: 70px;
+    width: 420px;
+    height: 100px;
+    background-color: orangered;
 }
 article#texto > p {
     font-family: var(--fonte-serifada);
@@ -142,9 +145,10 @@ article#contato {
     justify-content: flex-end;
     align-content: space-around;
     line-height: 35px;
+    padding-top: 15px;
     width: 420px;
     height: 150px;
-    padding-top: 15px;
+    background-color: purple;
 }
 article#contato > ul a {
     display: flex;
@@ -158,25 +162,21 @@ article#contato > ul > p {
     color: var();
 }
 
-
 section#formacao {
     display: flex;
-    justify-content: flex-end;
-    background-color: var(--cor05);
+    flex-direction: row;
+    justify-content: center;
     width: 100%;
     height: 495px;
+    background-color: var(--cor05);
 }
 article#formacao {
-    display: flex;
-    align-items: flex-end;
-    width: 1401px;
-    padding-top: 661px;
-    padding-left: 465px;
-    background-color: blue;
+    display: inline-block; /*p/ margin funcionar*/
+    margin-top: 170px;
+    padding-left: 40px;
+    background-color: orangered;
 }
 article#formacao > h1 {
-    display: flex;
-    align-content: flex-end;
     font-family: var(--fonte-cursiva);
     font-size: 20em;
     font-weight: normal;
@@ -185,35 +185,143 @@ article#datas {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 76px;
-    padding-top: 26.5px;
-    background-color: red;
+    padding-top: 28px; 
+    background-color: purple;
 }
 article#datas > p {
     font-family: var(--fonte-reta);
     color: white;
-    line-height: 60.9px;
-    font-size: 1.1em;
+    line-height: 61px;
+    font-size: 0.9em;
     font-weight: normal;
 }
 article#cursos {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    line-height: 18px;
-    width: 1225px;
-    padding-top: 0px;
-    padding-left: 0px;
-    background-color: green;
+    justify-content: flex-start;
+    line-height: 17px;
+    padding-left: 10px;
+    padding-top: 45px;
+    padding-right: 20px;
+    background-color: orangered;
 }
 article#cursos > p {
-   font-family: var(--fonte-reta);
+    font-family: var(--fonte-reta);
     color: white;
-    line-height: 16px;
-    font-size: 1em;
+    line-height: 16.5px;
+    font-size: 0.8em;
     font-weight: normal;
     padding-top: 5px; 
 }
+
+@media all and (max-width: 950px) {
+    section#formacao {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: 400px;
+        background-color: var(--cor05);
+    }
+    article#formacao > h1 {
+        font-family: var(--fonte-cursiva);
+        font-size: 13em;
+        font-weight: normal;
+    }
+    article#datas {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 28px; 
+        background-color: purple;
+    }
+    article#datas > p {
+        font-family: var(--fonte-reta);
+        color: white;
+        line-height: 48px;
+        font-size: 0.9em;
+        font-weight: normal;
+    }
+    article#cursos {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        line-height: 7px;
+        padding-left: 10px;
+        padding-top: 25px;
+        background-color: orangered;
+    }
+    article#cursos > p {
+        font-family: var(--fonte-reta);
+        color: white;
+        line-height: 16.5px;
+        font-size: 0.8em;
+        font-weight: normal;
+        padding-top: 5px; 
+    }
+}
+
+@media all and (max-width: 676px) {
+    section#formacao {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: 450px;
+        background-color: var(--cor05);
+    }
+    article#formacao {
+        margin-top: 268px;
+        padding-left: 40px;
+        height: 0px;
+        background-color: orangered;
+    }
+    article#formacao > h1 {
+        font-family: var(--fonte-cursiva);
+        font-size: 11em;
+        font-weight: normal;
+        width: 60px;
+    }
+    article#datas {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 18px; 
+        height: 361px;
+        background-color: purple;
+    }
+    article#datas > p {
+        font-family: var(--fonte-reta);
+        color: white;
+        line-height: 47px;
+        font-size: 0.8em;
+        font-weight: normal;
+    }
+    article#cursos {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        line-height: 7px;
+        padding-left: 10px;
+        padding-top: 25px;
+        background-color: orangered;
+    }
+    article#cursos > p {
+        font-family: var(--fonte-reta);
+        color: white;
+        line-height: 15.5px;
+        font-size: 0.75em;
+        font-weight: normal;
+        padding-top: 5px; 
+    }
+}
+
+
+
+
+
+
+
 
 
 

@@ -33,7 +33,7 @@
     --fonte-reta: 'Raleway', sans-serif;
 }
 
-/html {
+html {
     overflow-x: hidden;
     overflow-y: auto;
     height: 100%;
@@ -51,7 +51,7 @@ nav  {
     justify-content: space-evenly;
     align-items: flex-end;
     width: 390px;  
-    margin-right: 25px;   
+    margin-right: 60px;   
 }
 nav > a {
     text-decoration: none;
@@ -63,6 +63,7 @@ nav > a {
 main {
     display: flex;
     justify-content: flex-start;
+    flex-direction: column;
     background-color: yellow; 
     height: 6000px;
     width: 100%;
@@ -82,9 +83,9 @@ section#sobre{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #92634F;
+    background-color: var(--cor01);
     width: 100%;
-    height: 530px;
+    height: 590px;
 }
 article#sobre {
     display: flex;
@@ -92,7 +93,6 @@ article#sobre {
     padding-top: 10px;
     height: 171px;
     width: 420px;
-    background-color: red; 
 } 
 article#sobre > h1 {
     font-family: var(--fonte-cursiva);
@@ -104,7 +104,6 @@ article#portifolio {
     justify-content: flex-end;
     padding-top: 0px;
     width: 420px;
-    background-color: blue;
 }
 article#portifolio > h2 {
     font-family: var(--fonte-serifada);
@@ -116,7 +115,6 @@ article#livia {
     justify-content: flex-end;
     padding-top: 5px;
     width: 420px;
-    background-color: pink;
 }
 article#livia > h3 {
     font-family: var(--fonte-reta);
@@ -133,7 +131,6 @@ article#texto {
     max-width: 560px;
     min-width: 400px;
     padding-right: 70px;
-    background-color: rgb(0, 255, 21); 
 }
 article#texto > p {
     font-family: var(--fonte-serifada);
@@ -144,21 +141,79 @@ article#contato {
     display: flex;
     justify-content: flex-end;
     align-content: space-around;
-    line-height: 22px;
+    line-height: 35px;
     width: 420px;
     height: 150px;
-    background-color: blue;
+    padding-top: 15px;
 }
-article#contato > ul {
+article#contato > ul a {
     display: flex;
     flex-direction: column;
     font-family: var(--fonte-serifada);
+    text-decoration: none;
+    line-height: 24px;
 }
 article#contato > ul > p {
     font-family: var(--fonte-reta);
-    color: var(--cor03);
+    color: var();
 }
 
+
+section#formacao {
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--cor05);
+    width: 100%;
+    height: 495px;
+}
+article#formacao {
+    display: flex;
+    align-items: flex-end;
+    width: 1401px;
+    padding-top: 661px;
+    padding-left: 465px;
+    background-color: blue;
+}
+article#formacao > h1 {
+    display: flex;
+    align-content: flex-end;
+    font-family: var(--fonte-cursiva);
+    font-size: 20em;
+    font-weight: normal;
+}
+article#datas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 76px;
+    padding-top: 26.5px;
+    background-color: red;
+}
+article#datas > p {
+    font-family: var(--fonte-reta);
+    color: white;
+    line-height: 60.9px;
+    font-size: 1.1em;
+    font-weight: normal;
+}
+article#cursos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 18px;
+    width: 1225px;
+    padding-top: 0px;
+    padding-left: 0px;
+    background-color: green;
+}
+article#cursos > p {
+   font-family: var(--fonte-reta);
+    color: white;
+    line-height: 16px;
+    font-size: 1em;
+    font-weight: normal;
+    padding-top: 5px; 
+}
 
 
 

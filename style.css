@@ -26,7 +26,7 @@
     --cor02: #D4D5CE;
     --cor03: #83837D;
     --cor04: #E7E0DB;
-    --cor05: #92634F;
+    --cor05: #99624b;
 
     --fonte-cursiva: 'Rotherdam', cursive;
     --fonte-serifada: 'Playfair', cursive;
@@ -39,15 +39,18 @@ html {
     height: 100%;
 } 
 
+
 /*---------MENU----------*/
 
 header {
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
+    align-items: flex-end;
     background-color: var(--cor01);
     height: 60px;
 }
-nav  {
+nav#menu  {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -55,12 +58,27 @@ nav  {
     width: 390px;  
     margin-right: 60px;   
 }
-nav > a {
+nav#menu > a {
     text-decoration: none;
     padding: 10px;
     font-family: var(--fonte-reta); 
     font-size: 0.9em; 
 }
+nav#traco_menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 10px;
+    background-color: var(--cor01);
+}
+nav#traco_menu > div.traco_menu {
+    width: 1059px;
+    height: 1.52px;
+    background-color: black;
+}
+
+/*--------------------------*/
 
 main {
     display: flex;
@@ -70,16 +88,6 @@ main {
     height: 6000px;
     width: 100%;
 }
-
-/* section#traco {
-    display: flex;  
-}
-section#traco > div {
-    display: flex;
-    width: 600px;
-    height: 2px;
-    background-color: black;
-} */
 
 /*----------SOBRE----------*/
 
@@ -135,7 +143,7 @@ article.texto {
     padding-top: 60px;
     padding-left: 30px;
     padding-right: 70px;
-    width: 493px;
+    width: 594px;
     height: 100px;
     /* background-color: orangered; */
 }
@@ -199,6 +207,7 @@ div.arco03 {
     background-color: #d4d4d069;
 }
 
+
 /*---------FORMAÇÃO----------*/
 
 section#formacao {
@@ -211,9 +220,9 @@ section#formacao {
 }
 article.formacao {
     display: inline-block; /*p/ margin e padding funcionar*/
-    margin-top: 170px;
-    padding-left: 40px;
-    background-color: orangered;
+    margin-top: 160px;
+    padding-left: 45px;
+    /* background-color: orangered; */
 }
 article.formacao > h1 {
     font-family: var(--fonte-cursiva);
@@ -225,7 +234,7 @@ article.datas {
     flex-direction: column;
     align-items: center;
     padding-top: 28px; 
-    background-color: purple;
+    /* background-color: purple; */
 }
 article.datas > p {
     font-family: var(--fonte-reta);
@@ -242,7 +251,7 @@ article.cursos {
     padding-left: 10px;
     padding-top: 45px;
     padding-right: 20px;
-    background-color: orangered;
+    /* background-color: orangered; */
 }
 article.cursos > p {
     font-family: var(--fonte-reta);
@@ -346,6 +355,8 @@ div.arco_experiencia {
 
 
 @media all and (max-width: 950px) {
+
+    /*-------FORMAÇÃO--------*/
     section#formacao {
         display: flex;
         flex-direction: row;
@@ -364,7 +375,7 @@ div.arco_experiencia {
         flex-direction: column;
         align-items: flex-start;
         padding-top: 28px; 
-        background-color: purple;
+        /* background-color: purple; */
     }
     article.datas > p {
         font-family: var(--fonte-reta);
@@ -380,7 +391,7 @@ div.arco_experiencia {
         line-height: 7px;
         padding-left: 10px;
         padding-top: 25px;
-        background-color: orangered;
+        /* background-color: orangered; */
     }
     article.cursos > p {
         font-family: var(--fonte-reta);
@@ -392,7 +403,82 @@ div.arco_experiencia {
     }
 }
 
-@media all and (max-width: 676px) {
+@media all and (max-width: 700px) {
+    
+    /*---------MENU----------*/
+
+    header {
+        display: flex;
+        flex-direction: column;  
+        align-items: flex-end;
+        background-color: var(--cor01);
+        height: 60px;
+    }
+    nav#menu  {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 390px;  
+        margin-right: 40px;   
+    }
+    nav#menu > a {
+        text-decoration: none;
+        padding: 12px;
+        font-family: var(--fonte-reta); 
+        font-size: 0.9em; 
+    }
+    nav#traco_menu {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 10px;
+        background-color: var(--cor01);
+    }
+    nav#traco_menu > div.traco_menu {
+        width: 550px;
+        height: 1.5px;
+    }
+    
+    /*----------SOBRE----------*/
+
+    section#sobre {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 661px;
+    }
+    article.texto {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 60px;
+        padding-left: 135px;
+        padding-right: 134px;
+        width: 414px;
+        height: 100px;
+        /* background-color: orangered; */
+    }
+    article.texto > p {
+        font-family: var(--fonte-serifada);
+        font-weight: bold;
+        font-size: 0.9em;
+    }
+    div.arco01 {
+        position: absolute;
+        margin-left: -1001px;
+        margin-top: 108px;
+        z-index: -1; /*só funciona c/ position*/
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        width: 728px;
+        height: 796px;
+        background-color: #f4f3ecc7;
+    }
+
+    /*--------FORMAÇÃO--------*/
     section#formacao {
         display: flex;
         flex-direction: row;
@@ -402,10 +488,10 @@ div.arco_experiencia {
         background-color: var(--cor05);
     }
     article.formacao {
-        margin-top: 268px;
+        margin-top: 250px;
         padding-left: 40px;
         height: 0px;
-        background-color: orangered;
+        /* background-color: orangered; */
     }
     article.formacao > h1 {
         font-family: var(--fonte-cursiva);
@@ -419,7 +505,7 @@ div.arco_experiencia {
         align-items: flex-start;
         padding-top: 18px; 
         height: 361px;
-        background-color: purple;
+        /* background-color: purple; */
     }
     article.datas > p {
         font-family: var(--fonte-reta);
@@ -435,7 +521,7 @@ div.arco_experiencia {
         line-height: 7px;
         padding-left: 10px;
         padding-top: 25px;
-        background-color: orangered;
+        /* background-color: orangered; */
     }
     article.cursos > p {
         font-family: var(--fonte-reta);
@@ -446,8 +532,6 @@ div.arco_experiencia {
         padding-top: 5px; 
     }
 }
-
-
 
 
 

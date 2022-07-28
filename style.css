@@ -89,6 +89,7 @@ main {
     width: 100%;
 }
 
+
 /*----------SOBRE----------*/
 
 section#sobre{
@@ -277,21 +278,276 @@ article.skills {
     display: flex;
     justify-content: flex-start;
     margin-top: 263px;
-    width: 576px;
-    height: 230px;
-    background-color: purple;
+    width: 544px;
+    height: 250px;
+    background-color: var(--cor04);
 }
 aside.titulo {
     display: flex;
     align-items: flex-start;
-    padding: 10px 0px 0px 20px;
+    padding: 21px 0px 0px 25px;
 }
-aside.habilidades {
+aside.titulo > h2 {
+    font-weight: normal;
+    color: var(--cor03);
+    font-size: 1.9em;
+}
+aside.habilidades p {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
+    padding: 25px 0px 0px 30px;
+    line-height: 7px;
+    font-size: 0.8em;
+}
+aside.barrinhas {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: flex-start;
-    padding: 20px 0px 0px 30px;
-    line-height: 27px;
+    padding-left: 20px;
+    padding-top: 0px;
+    line-height: 7px;
+    width: 300px;
+    /* background-color: red; */
+}
+div.barrinhas_css {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    align-content: flex-start;
+    width: 210px;
+    height: 15px;
+    /* background-color: blue; */
+}
+div.barrinhas_css > div.b1 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor03);
+}
+div.barrinhas_css > div.b2 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor03);
+}
+div.barrinhas_css > div.b3 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor03);
+}
+div.barrinhas_css > div.b4 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor01);
+}
+div.barrinhas_css > div.b5 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor01);
+}
+div.barrinhas_html{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    align-content: flex-start;
+    width: 210px;
+    height: 15px;
+    /* background-color: blue; */
+}
+div.barrinhas_html > div.b1 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor03);
+}
+div.barrinhas_html > div.b2 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor03);
+}
+div.barrinhas_html > div.b3 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor03);
+}
+div.barrinhas_html > div.b4 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor01);
+}
+div.barrinhas_html > div.b5 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor01);
+}
+div.barrinhas_javascript {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    align-content: flex-start;
+    width: 210px;
+    height: 15px;
+    /* background-color: blue; */
+}
+div.barrinhas_javascript > div.b1 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor03);
+}
+div.barrinhas_javascript > div.b2 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor01);
+}
+div.barrinhas_javascript > div.b3 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor01);
+}
+div.barrinhas_javascript > div.b4 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor01);
+}
+div.barrinhas_javascript > div.b5 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor01);
+}
+div.barrinhas_react{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    align-content: flex-start;
+    width: 210px;
+    height: 15px;
+    /* background-color: blue; */
+}
+div.barrinhas_react > div.b1 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor01);
+}
+div.barrinhas_react > div.b2 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor01);
+}
+div.barrinhas_react > div.b3 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor01);
+}
+div.barrinhas_react > div.b4 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor01);
+}
+div.barrinhas_react > div.b5 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor01);
+}
+div.barrinhas_node{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    align-content: flex-start;
+    width: 210px;
+    height: 15px;
+    /* background-color: blue; */
+}
+div.barrinhas_node > div.b1 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor01);
+}
+div.barrinhas_node > div.b2 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor01);
+}
+div.barrinhas_node > div.b3 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor01);
+}
+div.barrinhas_node > div.b4 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor01);
+}
+div.barrinhas_node > div.b5 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor01);
+}
+div.barrinhas_photoshop{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    align-content: flex-start;
+    width: 210px;
+    height: 15px;
+    /* background-color: blue; */
+}
+div.barrinhas_photoshop > div.b1 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor03);
+}
+div.barrinhas_photoshop > div.b2 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor03);
+}
+div.barrinhas_photoshop > div.b3 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor03);
+}
+div.barrinhas_photoshop > div.b4 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor03);
+}
+div.barrinhas_photoshop > div.b5 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor01);
+}
+div.barrinhas_illustrator{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    align-content: flex-start;
+    width: 210px;
+    height: 15px;
+    /* background-color: blue; */
+}
+div.barrinhas_illustrator > div.b1 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor03);
+}
+div.barrinhas_illustrator > div.b2 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor03);
+}
+div.barrinhas_illustrator > div.b3 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor03);
+}
+div.barrinhas_illustrator > div.b4 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor03);
+}
+div.barrinhas_illustrator > div.b5 {
+    width: 25px;
+    height: 10px;   
+    background-color: var(--cor01);
 }
 article.experiencia {
     display: flex;
@@ -300,7 +556,7 @@ article.experiencia {
     margin-top: 179px;
     width: 272px;
     height: 314px;
-    background-color: orangered;
+    /* background-color: orangered; */
 }
 aside.titulo_experiencia h1 {
     display: flex;
@@ -308,25 +564,26 @@ aside.titulo_experiencia h1 {
     padding-top: 10px;
     font-size: var(--fonte-serifada);
     font-weight: normal;
-    font-size: 2em;
+    font-size: 2.2em;
 }
 aside.texto_experiencia p {
     display: flex;
     justify-content: center;
-    padding: 19px 50px 20px 50px;
+    padding: 32px 50px 20px 50px;
     font-size: var(--fonte-serifada);
     font-weight: normal;
-    font-size: 1em;
+    font-size: 0.9em;
 }
 div.tracinho {
     display: flex;
     align-items: center;
     width: 59px;
     height: 1.4px;
-    margin-left: 40%;
+    margin-left: 35%;
+    margin-top: 20px;
     background-color: black;
 }    
-div.arco_skill {
+div.arco_skill_01 {
     position: absolute;
     margin-left: -645px;
     margin-top: 155px;
@@ -336,19 +593,18 @@ div.arco_skill {
     width: 389px;
     height: 405px;
     background-color: var(--cor02);
-}
-div.arco_experiencia {
+} 
+div.arco_skill_02 {
     position: absolute;
-    /* margin-left: -645px;
-    margin-top: 155px; */
-    /* z-index: -1; */
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    width: 1389px;
-    height: 1405px;
+    margin-left: 494px;
+    margin-top: 130px;
+    z-index: -1; /*só funciona c/ position*/
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    width: 427px;
+    height: 459px;
     background-color: var(--cor02);
-    color: red;
-}
+} 
 
 
 
@@ -357,6 +613,7 @@ div.arco_experiencia {
 @media all and (max-width: 950px) {
 
     /*-------FORMAÇÃO--------*/
+
     section#formacao {
         display: flex;
         flex-direction: row;
@@ -479,6 +736,7 @@ div.arco_experiencia {
     }
 
     /*--------FORMAÇÃO--------*/
+
     section#formacao {
         display: flex;
         flex-direction: row;

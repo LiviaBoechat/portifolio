@@ -686,8 +686,7 @@ aside.iframe > iframe {
     position: relative;
     width: 194px;
     height: 900px;
-    margin-top: 53px;
-    border-radius: 12px;  
+    margin-top: 53px; 
 }
 
 article#botoes {
@@ -705,9 +704,15 @@ article#botoes > a {
     text-decoration: none;
     font-size: 0.8em;
     padding: 5px 10px 5px 10px;
-    border-radius: 10%;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.329);
-    background-color: var(--cor03);    
+    border-radius: 10%;;
+    background-color: var(--cor03); 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.459);  
+}
+article#botoes > a:hover {
+    background-color: #99624b;
+    border: 2px solid white;
+    transform: translate(-3px, -3px);
+    transition: transform .3s, border 1s;
 }
 
 

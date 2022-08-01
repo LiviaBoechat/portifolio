@@ -222,7 +222,7 @@ div.arco03 {
     position: absolute;
     margin-left: 1329px;
     margin-top: 258px;
-    z-index: -2; /*só funciona c/ position*/
+    z-index:; /*só funciona c/ position*/
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     width: 728px;
@@ -988,6 +988,12 @@ div.arco_skill_02 {
         height: 796px;
         background-color: #f4f3ecc7;
     }
+
+    div.arco03 {
+        display: none;
+    }
+
+    
 
     /*--------FORMAÇÃO--------*/
 

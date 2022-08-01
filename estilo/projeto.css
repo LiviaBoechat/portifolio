@@ -6,6 +6,20 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+:root {
+    --cor01: #FAFAFA;
+    --cor02: #D4D5CE;
+    --cor03: #83837D;
+    --cor04: #E7E0DB;
+    --cor05: #99624b;
+
+    --fonte-cursiva: 'Rotherdam', cursive;
+    --fonte-serifada: 'Playfair', cursive;
+    --fonte-reta: 'Raleway', sans-serif;
+}
+
+
 ::-webkit-scrollbar { /*some com barra de rolagem*/
     width: 0px;
     height: 0px;
@@ -16,20 +30,24 @@ img {
     /* height: 422px; */
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.459);  
+   
 }
 
 a {
     display: block;
-    background-color: darkred;
+    background-color: var(--cor03);
     color: white;
-    padding: 20px;
+    padding: 19px;
     text-align: center;
     font-weight: bolder;
     text-decoration: none;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    width: 157px;
+    height: 8px;
+    margin-top: -5px;
+    margin-left: -1px;
 }
 
 a:hover {
-    background-color: red;
+    background-color: var(--cor05);
 }

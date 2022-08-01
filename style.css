@@ -79,6 +79,11 @@ nav#traco_menu > div.traco_menu {
     background-color: black;
 }
 
+a:hover {
+    color: #9b5d43;   
+    text-shadow: 1px 10px 10px #9b5d4360;
+}
+
 /*--------------------------*/
 
 main {
@@ -154,12 +159,27 @@ article.texto > p {
     font-weight: bold;
     font-size: 0.9em;
 }
+aside.icones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 207px;
+    margin-top: 39px;
+    width: 25px;
+    height: 88px;
+    /* background-color: aqua; */
+}
+aside.icones > div {
+    display: flex;
+    justify-content: space-between;  
+}
 article.contato {
     display: flex;
     justify-content: flex-end;
     align-content: space-around;
     line-height: 35px;
     padding-top: 30px;
+    margin-left: 58px;
     width: 420px;
     height: 150px;
     /* background-color: purple; */
@@ -175,6 +195,7 @@ article.contato > ul > p {
     font-family: var(--fonte-reta);
     color: var();
 }
+
 div.arco01 {
     position: absolute;
     margin-left: -1159px;
@@ -945,6 +966,16 @@ div.arco_skill_02 {
         font-family: var(--fonte-serifada);
         font-weight: bold;
         font-size: 0.9em;
+    }
+    article.contato {
+        display: flex;
+        justify-content: flex-end;
+        align-content: space-around;
+        line-height: 35px;
+        padding-top: 30px;
+        margin-left: 24px;
+        width: 420px;
+        height: 150px;
     }
     div.arco01 {
         position: absolute;
